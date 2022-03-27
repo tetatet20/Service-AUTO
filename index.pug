@@ -1,20 +1,14 @@
 html
   head
     block title 
-        title Главная страница
+      title Главная страница
 
     block meta
-        meta(name="viewport" content="width=device-width, initial-scale=1")
-
-
-    block styles
-    style 
-      include ./dist/index.css
-
+      meta(name="viewport" content="width=device-width, initial-scale=1")
+      link(rel="stylesheet", href="index.css")
   body
     .container
-        include ./components/header.pug
-        include ./components/main.pug  
-        //- block content
-        include ./components/footer.pug
-        block scripts
+      include ./components/header.pug
+      include ./components/main.pug  
+      include ./components/footer.pug
+      block scripts

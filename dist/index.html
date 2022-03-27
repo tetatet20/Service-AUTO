@@ -3,237 +3,7 @@
   <head>
     <title>Главная страница</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <style>
-       @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
-button {
-  padding: 0;
-  border: none;
-  font: inherit;
-  color: inherit;
-  background-color: transparent;
-}
-
-li {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  margin: 0px;
-  padding: 0px;
-}
-
-p {
-  margin: 0px;
-}
-
-.header {
-  max-width: 1440px;
-  max-height: 100px;
-  padding: 25px 50px;
-  background-color: #F8F8F8;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-family: "Montserrat";
-  margin: 0 auto;
-}
-@media (max-width: 500px) {
-  .header {
-    padding: 15px 30px;
-  }
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-@media (max-width: 500px) {
-  .logo1 {
-    width: 30%;
-    height: 60%;
-  }
-}
-
-@media (max-width: 500px) {
-  .logo2 {
-    width: 50%;
-    height: 70%;
-  }
-}
-
-.around-clock {
-  display: flex;
-  font-weight: 500;
-  font-size: 16px;
-  color: #CB2130;
-}
-@media (max-width: 1030px) {
-  .around-clock {
-    display: none;
-  }
-}
-
-.around-clock img {
-  margin-right: 10px;
-}
-
-.navigation {
-  align-items: center;
-  display: flex;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-  display: flex;
-}
-@media (max-width: 900px) {
-  .navigation {
-    display: none;
-  }
-}
-
-.class-link {
-  font-size: 16x;
-  font-family: "Montserrat";
-  padding-right: 10px;
-  padding-left: 10px;
-  color: black;
-}
-.class-link:hover {
-  color: #CB2130;
-}
-.class-link:active {
-  color: #f30b227c;
-}
-
-.border {
-  border-right: 1.5px solid black;
-}
-
-.contacts {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  color: #CB2130;
-}
-@media (max-width: 700px) {
-  .contacts {
-    display: none;
-  }
-}
-
-.number {
-  color: #CB2130;
-  margin-left: 15px;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  cursor: pointer;
-}
-
-.number-first {
-  margin-bottom: 5px;
-}
-
-.number-second {
-  margin-bottom: 2px;
-}
-
-.email {
-  position: relative;
-  display: flex;
-  cursor: pointer;
-}
-
-.email-logo {
-  width: 20px;
-  height: 20px;
-}
-
-.top {
-  position: absolute;
-  top: 7px;
-  left: -1px;
-}
-
-.bottom {
-  position: absolute;
-  top: 11px;
-  left: -1px;
-}
-
-.right {
-  position: absolute;
-  top: 7px;
-  left: 7px;
-}
-
-.left {
-  position: absolute;
-  top: 7px;
-  left: -1px;
-}
-
-@media (max-width: 900px) {
-  .header-burger {
-    z-index: 2;
-    display: block;
-    position: relative;
-    width: 30px;
-    height: 20px;
-  }
-  .header-burger::before {
-    content: "";
-    background-color: black;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    left: 0px;
-    top: 0px;
-  }
-  .header-burger::after {
-    content: "";
-    background-color: black;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    left: 0px;
-    bottom: 0px;
-  }
-
-  .burger-span {
-    position: absolute;
-    background-color: black;
-    width: 100%;
-    left: 0;
-    height: 2px;
-    top: 9px;
-  }
-}
-.main {
-  max-width: 1440px;
-  height: 500px;
-  background-color: aqua;
-  margin: 0 auto;
-}
-    </style>
+    <link rel="stylesheet" href="index.css"/>
   </head>
   <body>
     <div class="container">
@@ -249,15 +19,44 @@ p {
           <li><a class="class-link" href="#">Контакты</a></li>
         </ul>
         <div class="contacts">
-          <div class="number-first"> <img src="../img/phone.svg" alt="Номер телефона"/><span class="number">+7 8172 58 07 08</span></div>
-          <div class="number-second"> <img src="../img/phone.svg" alt="Номер телефона"/><span class="number">+7 921 680 30 48 </span></div>
-          <div class="email">     
-            <div class="email-logo"> <img class="top" src="../img/top.svg" alt="Круглосуточно"/><img class="bottom" src="../img/bottom.svg" alt="Круглосуточно"/><img class="right" src="../img/right.svg" alt="Круглосуточно"/><img class="left" src="../img/left.svg" alt="Круглосуточно"/></div><span>etalcom@mail.ru </span>
-          </div>
+          <div class="number-first"> <img src="../img/phone.svg" alt="Номер телефона"/><a class="number" href="tel:+78172580708">+7 8172 58 07 08</a></div>
+          <div class="number-second"> <img src="../img/phone.svg" alt="Номер телефона"/><a class="number" href="tel:+79216803048">+7 921 680 30 48   </a></div>
+          <div class="email">      <img class="email-logo" src="../img/email.svg" alt="email"/><a href="mailto:etalcom@mail.ru">etalcom@mail.ru</a></div>
         </div>
         <div class="header-burger"><span class="burger-span"></span></div>
       </div>
-      <div class="main"></div>
+      <div class="main">  
+        <div class="information-container">
+          <div class="first-slider"> <img src="../img/first-slider.svg" alt="alt"/></div>
+          <div class="main-information"> <span class="name-information">Сервис Авто</span><span class="tow-truck-information">Эвакуатор</span><img class="city-information" src="../img/vologda.svg" alt="Вологда"/><span class="region-russia"> Область и Россия</span>
+            <div class="free-cars"> 
+              <p>Свободно <br> эвакуаторов</p><span>1</span>
+              <div class="payment"> 
+                <p>Оплата картой</p><img src="../img/payment.svg" alt="Оплата картой"/>
+              </div>
+            </div>
+            <button class="car-call">Вызвать эвакуатор</button>
+          </div>
+          <div class="main-logo"><img class="around-clock-big" src="../img/logo-big.svg" alt="Круглосуточно"/><img class="logo-tow-truck" src="../img/tow-truck.png" alt="Эвакуатор"/></div>
+        </div>
+        <div class="second-slider"><img src="../img/second-slider.svg" alt="alt"/></div>
+      </div>
+      <div class="header">
+        <div class="logo">  <img class="logo1" src="../img/logo1.svg" alt="logo"/><img class="logo2" src="../img/logo2.svg" alt="Service AUTO"/></div>
+        <ul class="navigation-footer">
+          <li><a class="class-link border" href="#">Главная</a></li>
+          <li><a class="class-link border" href="#">Услуги</a></li>
+          <li><a class="class-link border" href="#">Цены</a></li>
+          <li><a class="class-link" href="#">Контакты</a></li>
+        </ul>
+        <div class="address">Адрес: г. Вологда, <br> ул. Говоровский проезд, <br> дом, 4/3</div>
+        <div class="contacts-footer">
+          <div class="number-first"> <img src="../img/phone.svg" alt="Номер телефона"/><a class="number" href="tel:+78172580708">+7 8172 58 07 08</a></div>
+          <div class="number-second"> <img src="../img/phone.svg" alt="Номер телефона"/><a class="number" href="tel:+79216803048">+7 921 680 30 48   </a></div>
+          <div class="email">     <img class="email-logo" src="../img/email.svg" alt="email"/><a href="mailto:etalcom@mail.ru">etalcom@mail.ru</a></div>
+        </div>
+        <div class="burger-footer"><span class="burger-span-footer"></span></div>
+      </div>
     </div>
   </body>
 </html>

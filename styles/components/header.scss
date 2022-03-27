@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import "../variables.scss";
 
 
+
+body {
+    margin: 0;
+    padding: 0;
+}
 
 button {
     padding: 0;
@@ -36,7 +37,7 @@ p {
 .header {
     max-width: 1440px;
     max-height: 100px;
-    padding: 25px 50px;//сбоку лучше сделать отступ 50 пикселей
+    padding: 25px 50px; //сбоку лучше сделать отступ 50 пикселей
     background-color: #F8F8F8;
     display: flex;
     align-items: center;
@@ -45,12 +46,12 @@ p {
     margin: 0 auto;
 
 
-        @media (max-width: 500px) {
-            padding: 15px 30px;
-        }
+    @media (max-width: 500px) {
+        padding: 15px 30px;
+    }
 }
 
-.logo   {
+.logo {
     display: flex;
     align-items: center;
 }
@@ -60,7 +61,12 @@ p {
         width: 30%;
         height: 60%;
     }
-    
+
+    @media (max-width: 370px) {
+        width: 25%;
+        height: 50%;
+    }
+
 }
 
 .logo2 {
@@ -68,7 +74,11 @@ p {
         width: 50%;
         height: 70%;
     }
-    
+
+    @media (max-width: 370px) {
+        width: 40%;
+        height: 60%;
+    }
 }
 
 .around-clock {
@@ -77,7 +87,7 @@ p {
     font-size: 16px;
     color: #CB2130;
 
-    @media (max-width: 1030px) {
+    @media (max-width: 1100px) {
         display: none;
     }
 }
@@ -107,16 +117,18 @@ p {
     padding-right: 10px;
     padding-left: 10px;
     color: black;
-        &:hover {
-            color: #CB2130;
-        }
-        &:active {
-            color:#f30b227c;
-        }
+
+    &:hover {
+        color: #CB2130;
+    }
+
+    &:active {
+        color: #f30b227c;
+    }
 }
 
 .border {
-    border-right:1.5px solid black ;
+    border-right: 1.5px solid black;
 }
 
 .contacts {
@@ -126,6 +138,7 @@ p {
     font-size: 16px;
     line-height: 20px;
     color: #CB2130;
+
     @media (max-width: 700px) {
         display: none;
     }
@@ -142,90 +155,81 @@ p {
     cursor: pointer;
 }
 
-.number-first { 
+.number-first {
     margin-bottom: 5px;
-}   
+}
 
 .number-second {
     margin-bottom: 2px;
 }
 
-.email {    
-position: relative;
-display: flex;
-cursor: pointer;
+.email {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.email a {
+    color: #CB2130;
+    margin-left: 8px;
 }
 
 .email-logo {
-    width: 20px;
-    height: 20px;
+    width: 11px;
+    height: 10px;
 }
-
-.top {
-position: absolute;
-    top:7px;
-    left: -1px;
-}
-
-.bottom {
-    position: absolute;
-    top:11px;
-    left: -1px;
-}
-
-.right{
-    position: absolute;
-    top:7px;
-    left: 7px;
-}
-
-.left{
-    position: absolute;
-    top:7px;
-    left: -1px;
-}   
 
 // .header-burger {
 //     display: none;
 // }
 
-@media(max-width:900px){
+@media(max-width:900px) {
     .header-burger {
         z-index: 2;
         display: block;
         position: relative;
         width: 30px;
         height: 20px;
-            &::before{
-                content: "";
-                background-color: black;
-                position: absolute;
-                width: 100%;
-                height: 2px;
-                left: 0px;
-                top:0px
-                
+
+        &::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0px;
+            top: 0px
+        }
+
+        &::after {
+            content: "";
+            background-color: black;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0px;
+            bottom: 0px;
+        }
+
+        @media (max-width: 500px) {
+            width: 20px;
+            height: 15px;
+
+            .burger-span {
+                top: 6px
             }
-            &::after{
-                content: "";
-                background-color: black;
-                position: absolute;
-                width: 100%;
-                height: 2px;
-                left: 0px;
-                bottom: 0px;
-            }
-            
+        }
+
     }
+
+
     .burger-span {
         position: absolute;
         background-color: black;
         width: 100%;
         left: 0;
         height: 2px;
-        top:9px
+        top: 9px
     }
 }
-
-
-   
