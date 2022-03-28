@@ -1,0 +1,680 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap");
+.footer {
+  max-width: 1440px;
+  max-height: 100px;
+  padding: 25px 50px;
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Montserrat";
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .footer {
+    padding: 15px 30px;
+  }
+}
+.footer .logo {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 750px) {
+  .footer .logo {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (max-width: 750px) {
+  .footer .logo1 {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .footer .logo2 {
+    width: 50%;
+    height: 70%;
+  }
+}
+@media (max-width: 370px) {
+  .footer .logo2 {
+    width: 40%;
+    height: 60%;
+  }
+}
+.footer .around-clock {
+  display: flex;
+  font-weight: 500;
+  font-size: 16px;
+  color: #cb2130;
+}
+@media (max-width: 1030px) {
+  .footer .around-clock {
+    display: none;
+  }
+}
+.footer .around-clock img {
+  margin-right: 10px;
+}
+.footer .navigation-footer {
+  align-items: center;
+  display: flex;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+}
+@media (max-width: 1200px) {
+  .footer .navigation-footer {
+    display: none;
+  }
+}
+.footer .class-link {
+  font-size: 16x;
+  font-family: "Montserrat";
+  padding-right: 10px;
+  padding-left: 10px;
+  color: black;
+}
+.footer .class-link:hover {
+  color: #cb2130;
+}
+.footer .class-link:active {
+  color: #f30b227c;
+}
+.footer .border {
+  border-right: 1.5px solid black;
+}
+.footer .contacts-footer {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #cb2130;
+  padding-left: 50px;
+  border-left: 1.5px solid black;
+  margin-left: 40px;
+}
+@media (max-width: 1200px) {
+  .footer .contacts-footer {
+    border: none;
+  }
+}
+@media (max-width: 750px) {
+  .footer .contacts-footer {
+    display: none;
+  }
+}
+.footer .number {
+  color: #cb2130;
+  margin-left: 15px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+}
+.footer .number-first {
+  margin-bottom: 5px;
+}
+.footer .number-second {
+  margin-bottom: 2px;
+}
+.footer .email {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .email a {
+  color: #cb2130;
+  margin-left: 8px;
+}
+.footer .email-logo {
+  width: 11px;
+  height: 10px;
+}
+.footer .address {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #cb2130;
+  padding-left: 25px;
+  border-left: 1.5px solid black;
+}
+@media (max-width: 1200px) {
+  .footer .address {
+    border: none;
+  }
+}
+@media (max-width: 1000px) {
+  .footer .address {
+    display: none;
+  }
+}
+
+.header {
+  max-width: 1440px;
+  max-height: 100px;
+  padding: 25px 50px;
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Montserrat";
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .header {
+    padding: 15px 30px;
+  }
+}
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .header .logo1 {
+    width: 30%;
+    height: 60%;
+  }
+}
+@media (max-width: 370px) {
+  .header .logo1 {
+    width: 25%;
+    height: 50%;
+  }
+}
+@media (max-width: 500px) {
+  .header .logo2 {
+    width: 50%;
+    height: 70%;
+  }
+}
+@media (max-width: 370px) {
+  .header .logo2 {
+    width: 40%;
+    height: 60%;
+  }
+}
+.header .around-clock {
+  display: flex;
+  font-weight: 500;
+  font-size: 16px;
+  color: #cb2130;
+}
+@media (max-width: 1100px) {
+  .header .around-clock {
+    display: none;
+  }
+}
+.header .around-clock img {
+  margin-right: 10px;
+}
+.header .navigation {
+  align-items: center;
+  display: flex;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+}
+@media (max-width: 900px) {
+  .header .navigation {
+    display: none;
+  }
+}
+.header .class-link {
+  font-size: 16x;
+  font-family: "Montserrat";
+  padding-right: 10px;
+  padding-left: 10px;
+  color: black;
+}
+.header .class-link:hover {
+  color: #cb2130;
+}
+.header .class-link:active {
+  color: #f30b227c;
+}
+.header .border {
+  border-right: 1.5px solid black;
+}
+.header .contacts {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #cb2130;
+}
+@media (max-width: 700px) {
+  .header .contacts {
+    display: none;
+  }
+}
+.header .number {
+  color: #cb2130;
+  margin-left: 15px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+}
+.header .number-first {
+  margin-bottom: 5px;
+}
+.header .number-second {
+  margin-bottom: 2px;
+}
+.header .email {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .email a {
+  color: #cb2130;
+  margin-left: 8px;
+}
+.header .email-logo {
+  width: 11px;
+  height: 10px;
+}
+@media (max-width: 900px) {
+  .header .header-burger {
+    z-index: 2;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+  }
+  .header .header-burger::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    top: 0px;
+  }
+  .header .header-burger::after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    bottom: 0px;
+  }
+}
+@media (max-width: 900px) and (max-width: 500px) {
+  .header .header-burger {
+    width: 20px;
+    height: 15px;
+  }
+  .header .header-burger .burger-span {
+    top: 6px;
+  }
+}
+@media (max-width: 900px) {
+  .header .burger-span {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    left: 0;
+    height: 2px;
+    top: 9px;
+  }
+}
+
+.main {
+  max-width: 1440px;
+  max-height: 620px;
+  background-color: white;
+  margin: 0 auto;
+  padding: 45px 50px;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+@media (max-width: 500px) {
+  .main {
+    padding: 25px 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .first-slider {
+    display: none;
+  }
+}
+
+.information-container {
+  display: flex;
+  align-items: center;
+}
+
+.main-information {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+  margin-top: -20px;
+}
+@media (max-width: 1200px) {
+  .main-information {
+    margin: 0 auto;
+    align-items: center;
+  }
+}
+
+.main-logo {
+  position: relative;
+  margin-left: -50px;
+}
+@media (max-width: 1200px) {
+  .main-logo {
+    display: none;
+  }
+}
+
+.around-clock-big {
+  position: absolute;
+  top: -25px;
+  left: 20px;
+  width: 28%;
+  height: 35%;
+}
+
+.name-information {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 98.4%;
+  letter-spacing: 0.015em;
+  color: #cb2130;
+}
+@media (max-width: 767px) {
+  .name-information {
+    font-size: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .name-information {
+    font-size: 30px;
+  }
+}
+
+.tow-truck-information {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: right;
+  padding-right: 75px;
+  text-transform: capitalize;
+  color: #000000;
+  margin-bottom: 10px;
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .tow-truck-information {
+    padding: 0px;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .tow-truck-information {
+    padding: 0px;
+    font-size: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .tow-truck-information {
+    font-size: 18px;
+  }
+}
+.tow-truck-information::after {
+  position: absolute;
+  top: 33px;
+  left: -2px;
+  content: "";
+  width: 295px;
+  height: 2px;
+  background-color: #000000;
+}
+@media (max-width: 1200px) {
+  .tow-truck-information::after {
+    display: none;
+  }
+}
+
+.city-information {
+  z-index: 2;
+}
+@media (max-width: 767px) {
+  .city-information {
+    width: 65%;
+  }
+}
+
+.region-russia {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .region-russia {
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .region-russia {
+    font-size: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .region-russia {
+    font-size: 18px;
+  }
+}
+.region-russia::after {
+  position: absolute;
+  top: 10px;
+  left: 340px;
+  content: "";
+  width: 215px;
+  height: 2px;
+  background-color: #000000;
+}
+@media (max-width: 1200px) {
+  .region-russia::after {
+    display: none;
+  }
+}
+
+.free-cars {
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+@media (max-width: 767px) {
+  .free-cars {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: -70px;
+  }
+}
+@media (max-width: 500px) {
+  .free-cars {
+    margin-right: 0px;
+  }
+}
+
+.car-call {
+  max-width: 448px;
+  height: 61px;
+  background: #53b92b;
+  border-radius: 29px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f7f7f7;
+}
+@media (max-width: 1200px) {
+  .car-call {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .car-call {
+    width: 330px;
+    height: 40px;
+    font-size: 15px;
+    line-height: 0px;
+  }
+}
+@media (max-width: 500px) {
+  .car-call {
+    width: 230px;
+    height: 30px;
+    font-size: 10px;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.free-cars p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 25px;
+  text-align: right;
+  color: #53b92b;
+}
+@media (max-width: 767px) {
+  .free-cars p {
+    text-align: start;
+    line-height: normal;
+    font-size: 16px;
+  }
+}
+@media (max-width: 500px) {
+  .free-cars p {
+    font-size: 10px;
+  }
+}
+
+.free-cars span {
+  width: 66px;
+  height: 60px;
+  background: #53b92b;
+  border-radius: 0px 10px 0px 15px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 52px;
+  line-height: 63px;
+  text-align: center;
+  margin-right: 12px;
+  margin-left: 23px;
+  color: #f7f7f7;
+}
+@media (max-width: 767px) {
+  .free-cars span {
+    width: 50px;
+    height: 40px;
+    font-size: 33px;
+    line-height: normal;
+  }
+}
+@media (max-width: 500px) {
+  .free-cars span {
+    width: 30px;
+    height: 25px;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+.payment {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 25px;
+  color: #53b92b;
+}
+@media (max-width: 500px) {
+  .payment {
+    max-width: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  .payment img {
+    width: 65%;
+  }
+}
+
+.logo-tow-truck {
+  margin-top: 25px;
+  margin-left: -40px;
+  width: 110%;
+  height: 110%;
+}
+
+.second-slider {
+  margin-top: 60px;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+body button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+body li {
+  list-style-type: none;
+}
+body a {
+  text-decoration: none;
+}
+body ul {
+  margin: 0px;
+  padding: 0px;
+}
+body p {
+  margin: 0px;
+}
