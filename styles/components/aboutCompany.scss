@@ -1,16 +1,16 @@
-
-
 $maxWidth: 1440;
-@mixin adaptiv-font($pcSize, $mobSize) {
-	$addSize: $pcSize - $mobSize;
-	$addMobSize: $addSize + $addSize * 0.7;
-	@media (max-width: 767px) {
-		font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
-	}
 
-	@media (min-width: 767px) {
-		font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
-	}
+@mixin adaptiv-font($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $addMobSize: $addSize + $addSize * 0.7;
+
+    @media (max-width: 767px) {
+        font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
+    }
+
+    @media (min-width: 767px) {
+        font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+    }
 }
 
 .about-company {
@@ -33,16 +33,16 @@ $maxWidth: 1440;
     }
 }
 
-.information-company   {
+.information-company {
     // margin-top:-40px;
     margin-left: 50px;
+
     @media (max-width: 500px) {
         margin: 0;
     }
 }
 
 .information-company h3 {
-    margin-left: 30px;
     margin-bottom: 25px;
     font-weight: 700;
     // font-size: 48px;
@@ -55,16 +55,16 @@ $maxWidth: 1440;
     }
 
     @media (max-width: 700px) {
-       margin-bottom: 15px;
+        margin-bottom: 15px;
     }
-        
+
     @include adaptiv-font(48, 16);
-    
+
 }
 
 .information-company p {
     text-align: justify;
-    text-indent: 30px;
+    // text-indent: 30px;
     font-weight: 700;
     // max-width: 640px;
     color: white;
@@ -72,14 +72,14 @@ $maxWidth: 1440;
     line-height: 1.4;
 
     @include adaptiv-font(22, 10);
-    
+
 
 }
 
 .about-company img {
     width: 40%;
-    
+
     @media (max-width: 650px) {
         display: none;
-     }
+    }
 }
