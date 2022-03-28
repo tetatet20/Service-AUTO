@@ -1,28 +1,29 @@
-$maxWidth: 1440;
+$maxWidthNumber: 1440;
 
 @mixin adaptiv-font($pcSize, $mobSize) {
     $addSize: $pcSize - $mobSize;
     $addMobSize: $addSize + $addSize * 0.7;
 
     @media (max-width: 767px) {
-        font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
+        font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidthNumber}));
     }
 
     @media (min-width: 767px) {
-        font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+        font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidthNumber}));
     }
 }
 
 .about-company {
-    max-width: 1440px;
-    max-height: 473px;
+    box-sizing: border-box;
+    width: 100%;
+    // max-height: 473px;
     background-color: #3E3E3E;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 50px 100px 50px 50px;
     font-family: 'Montserrat';
-    margin: 0 auto;
+    // margin: 0 auto;
 
     @media (max-width: 1000px) {
         padding: 40px 60px 40px 40px;
