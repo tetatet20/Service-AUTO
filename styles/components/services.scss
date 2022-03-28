@@ -1,0 +1,31 @@
+@import "../../component/services-component.scss";
+
+.services-container {
+    box-sizing: border-box;
+    // max-width: $maxWidth;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+    flex-direction: column;
+    padding: 50px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.services-container h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}

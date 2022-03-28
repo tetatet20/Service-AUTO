@@ -729,12 +729,12 @@
 }
 @media (max-width: 767px) {
   .information-company p {
-    font-size: calc(10px + 20.4 * ((100vw - 320px) / 1440));
+    font-size: calc(10px + 17 * ((100vw - 320px) / 1440));
   }
 }
 @media (min-width: 767px) {
   .information-company p {
-    font-size: calc(10px + 12 * (100vw / 1440));
+    font-size: calc(10px + 10 * (100vw / 1440));
   }
 }
 
@@ -745,6 +745,87 @@
   .about-company img {
     display: none;
   }
+}
+
+.background-logo {
+  width: 180px;
+  height: 147px;
+  background: #FFED00;
+  border: 5px solid #CB2130;
+  box-sizing: border-box;
+  border-radius: 44px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  padding: 20px;
+}
+
+.name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #514F4F;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  max-width: 200px;
+}
+
+.information {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-size: 20px;
+  line-height: 26px;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.more-information {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.background {
+  margin-bottom: 30px;
+}
+
+.more-information li {
+  list-style-position: inside;
+}
+
+.services-container {
+  box-sizing: border-box;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  font-family: "Montserrat";
+  flex-direction: column;
+  padding: 50px;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.services-container h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
 }
 
 body {
@@ -758,9 +839,6 @@ body button {
   color: inherit;
   background-color: transparent;
 }
-body li {
-  list-style-type: none;
-}
 body a {
   text-decoration: none;
 }
@@ -770,6 +848,9 @@ body ul {
 }
 body p {
   margin: 0px;
+}
+body h1, body h2, body h3 {
+  margin: 0;
 }
 
 .container {

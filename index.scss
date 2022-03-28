@@ -5,6 +5,8 @@
 @import "./styles/components/main.scss";
 @import "./styles/components/aboutCompany.scss";
 
+@import "./styles/components/services.scss";
+
 body {
   margin: 0;
   padding: 0;   
@@ -18,9 +20,9 @@ body {
     background-color: transparent;
   }
 
-  li {
-    list-style-type: none;
-  }
+//   li {
+//     list-style-type: none;
+//   }
 
   a {
     text-decoration: none;
@@ -33,6 +35,10 @@ body {
 
   p {
     margin: 0px;
+  }
+
+  h1,h2,h3 {
+      margin: 0;
   }
 }
 
