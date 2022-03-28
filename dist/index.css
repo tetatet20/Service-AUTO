@@ -1,39 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap");
-body {
-  margin: 0;
-  padding: 0;
-}
-
-button {
-  padding: 0;
-  border: none;
-  font: inherit;
-  color: inherit;
-  background-color: transparent;
-}
-
-li {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  margin: 0px;
-  padding: 0px;
-}
-
-p {
-  margin: 0px;
-}
-
-.header {
+.footer {
   max-width: 1440px;
   max-height: 100px;
   padding: 25px 50px;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -41,59 +11,52 @@ p {
   margin: 0 auto;
 }
 @media (max-width: 500px) {
-  .header {
+  .footer {
     padding: 15px 30px;
   }
 }
-
-.logo {
+.footer .logo {
   display: flex;
   align-items: center;
 }
-
-@media (max-width: 500px) {
-  .logo1 {
-    width: 30%;
-    height: 60%;
+@media (max-width: 750px) {
+  .footer .logo {
+    width: 100%;
+    justify-content: center;
   }
 }
-@media (max-width: 370px) {
-  .logo1 {
-    width: 25%;
-    height: 50%;
+@media (max-width: 750px) {
+  .footer .logo1 {
+    display: none;
   }
 }
-
 @media (max-width: 500px) {
-  .logo2 {
+  .footer .logo2 {
     width: 50%;
     height: 70%;
   }
 }
 @media (max-width: 370px) {
-  .logo2 {
+  .footer .logo2 {
     width: 40%;
     height: 60%;
   }
 }
-
-.around-clock {
+.footer .around-clock {
   display: flex;
   font-weight: 500;
   font-size: 16px;
-  color: #CB2130;
+  color: #cb2130;
 }
 @media (max-width: 1030px) {
-  .around-clock {
+  .footer .around-clock {
     display: none;
   }
 }
-
-.around-clock img {
+.footer .around-clock img {
   margin-right: 10px;
 }
-
-.navigation-footer {
+.footer .navigation-footer {
   align-items: center;
   display: flex;
   font-family: "Montserrat";
@@ -104,53 +67,49 @@ p {
   display: flex;
 }
 @media (max-width: 1200px) {
-  .navigation-footer {
+  .footer .navigation-footer {
     display: none;
   }
 }
-
-.class-link {
+.footer .class-link {
   font-size: 16x;
   font-family: "Montserrat";
   padding-right: 10px;
   padding-left: 10px;
   color: black;
 }
-.class-link:hover {
-  color: #CB2130;
+.footer .class-link:hover {
+  color: #cb2130;
 }
-.class-link:active {
+.footer .class-link:active {
   color: #f30b227c;
 }
-
-.border {
+.footer .border {
   border-right: 1.5px solid black;
 }
-
-.contacts-footer {
+.footer .contacts-footer {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  color: #CB2130;
+  color: #cb2130;
   padding-left: 50px;
   border-left: 1.5px solid black;
   margin-left: 40px;
 }
-@media (max-width: 1000px) {
-  .contacts-footer {
+@media (max-width: 1200px) {
+  .footer .contacts-footer {
     border: none;
   }
 }
 @media (max-width: 750px) {
-  .contacts-footer {
+  .footer .contacts-footer {
     display: none;
   }
 }
-
-.number {
-  color: #CB2130;
+.footer .number {
+  color: #cb2130;
   margin-left: 15px;
   font-family: "Montserrat";
   font-style: normal;
@@ -159,129 +118,52 @@ p {
   line-height: 20px;
   cursor: pointer;
 }
-
-.number-first {
+.footer .number-first {
   margin-bottom: 5px;
 }
-
-.number-second {
+.footer .number-second {
   margin-bottom: 2px;
 }
-
-.email {
+.footer .email {
   display: flex;
   cursor: pointer;
   align-items: center;
   justify-content: space-between;
 }
-
-.email a {
-  color: #CB2130;
+.footer .email a {
+  color: #cb2130;
   margin-left: 8px;
 }
-
-.email-logo {
+.footer .email-logo {
   width: 11px;
   height: 10px;
 }
-
-.address {
+.footer .address {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;
-  color: #CB2130;
+  color: #cb2130;
   padding-left: 25px;
   border-left: 1.5px solid black;
 }
+@media (max-width: 1200px) {
+  .footer .address {
+    border: none;
+  }
+}
 @media (max-width: 1000px) {
-  .address {
+  .footer .address {
     display: none;
   }
-}
-
-@media (max-width: 1200px) {
-  .burger-footer {
-    z-index: 2;
-    display: block;
-    position: relative;
-    width: 30px;
-    height: 20px;
-  }
-  .burger-footer::before {
-    content: "";
-    background-color: black;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    left: 0px;
-    top: 0px;
-  }
-  .burger-footer::after {
-    content: "";
-    background-color: black;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    left: 0px;
-    bottom: 0px;
-  }
-}
-@media (max-width: 1200px) and (max-width: 500px) {
-  .burger-footer {
-    width: 20px;
-    height: 15px;
-  }
-  .burger-footer .burger-span-footer {
-    top: 6px;
-  }
-}
-@media (max-width: 1200px) {
-  .burger-span-footer {
-    position: absolute;
-    background-color: black;
-    width: 100%;
-    left: 0;
-    height: 2px;
-    top: 9px;
-  }
-}
-body {
-  margin: 0;
-  padding: 0;
-}
-
-button {
-  padding: 0;
-  border: none;
-  font: inherit;
-  color: inherit;
-  background-color: transparent;
-}
-
-li {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  margin: 0px;
-  padding: 0px;
-}
-
-p {
-  margin: 0px;
 }
 
 .header {
   max-width: 1440px;
   max-height: 100px;
   padding: 25px 50px;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -293,55 +175,49 @@ p {
     padding: 15px 30px;
   }
 }
-
-.logo {
+.header .logo {
   display: flex;
   align-items: center;
 }
-
 @media (max-width: 500px) {
-  .logo1 {
+  .header .logo1 {
     width: 30%;
     height: 60%;
   }
 }
 @media (max-width: 370px) {
-  .logo1 {
+  .header .logo1 {
     width: 25%;
     height: 50%;
   }
 }
-
 @media (max-width: 500px) {
-  .logo2 {
+  .header .logo2 {
     width: 50%;
     height: 70%;
   }
 }
 @media (max-width: 370px) {
-  .logo2 {
+  .header .logo2 {
     width: 40%;
     height: 60%;
   }
 }
-
-.around-clock {
+.header .around-clock {
   display: flex;
   font-weight: 500;
   font-size: 16px;
-  color: #CB2130;
+  color: #cb2130;
 }
 @media (max-width: 1100px) {
-  .around-clock {
+  .header .around-clock {
     display: none;
   }
 }
-
-.around-clock img {
+.header .around-clock img {
   margin-right: 10px;
 }
-
-.navigation {
+.header .navigation {
   align-items: center;
   display: flex;
   font-family: "Montserrat";
@@ -352,45 +228,41 @@ p {
   display: flex;
 }
 @media (max-width: 900px) {
-  .navigation {
+  .header .navigation {
     display: none;
   }
 }
-
-.class-link {
+.header .class-link {
   font-size: 16x;
   font-family: "Montserrat";
   padding-right: 10px;
   padding-left: 10px;
   color: black;
 }
-.class-link:hover {
-  color: #CB2130;
+.header .class-link:hover {
+  color: #cb2130;
 }
-.class-link:active {
+.header .class-link:active {
   color: #f30b227c;
 }
-
-.border {
+.header .border {
   border-right: 1.5px solid black;
 }
-
-.contacts {
+.header .contacts {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  color: #CB2130;
+  color: #cb2130;
 }
 @media (max-width: 700px) {
-  .contacts {
+  .header .contacts {
     display: none;
   }
 }
-
-.number {
-  color: #CB2130;
+.header .number {
+  color: #cb2130;
   margin-left: 15px;
   font-family: "Montserrat";
   font-style: normal;
@@ -399,41 +271,35 @@ p {
   line-height: 20px;
   cursor: pointer;
 }
-
-.number-first {
+.header .number-first {
   margin-bottom: 5px;
 }
-
-.number-second {
+.header .number-second {
   margin-bottom: 2px;
 }
-
-.email {
+.header .email {
   display: flex;
   cursor: pointer;
   align-items: center;
   justify-content: space-between;
 }
-
-.email a {
-  color: #CB2130;
+.header .email a {
+  color: #cb2130;
   margin-left: 8px;
 }
-
-.email-logo {
+.header .email-logo {
   width: 11px;
   height: 10px;
 }
-
 @media (max-width: 900px) {
-  .header-burger {
+  .header .header-burger {
     z-index: 2;
     display: block;
     position: relative;
     width: 30px;
     height: 20px;
   }
-  .header-burger::before {
+  .header .header-burger::before {
     content: "";
     background-color: black;
     position: absolute;
@@ -442,7 +308,7 @@ p {
     left: 0px;
     top: 0px;
   }
-  .header-burger::after {
+  .header .header-burger::after {
     content: "";
     background-color: black;
     position: absolute;
@@ -453,16 +319,16 @@ p {
   }
 }
 @media (max-width: 900px) and (max-width: 500px) {
-  .header-burger {
+  .header .header-burger {
     width: 20px;
     height: 15px;
   }
-  .header-burger .burger-span {
+  .header .header-burger .burger-span {
     top: 6px;
   }
 }
 @media (max-width: 900px) {
-  .burger-span {
+  .header .burger-span {
     position: absolute;
     background-color: black;
     width: 100%;
@@ -471,6 +337,7 @@ p {
     top: 9px;
   }
 }
+
 .main {
   max-width: 1440px;
   max-height: 620px;
@@ -536,7 +403,7 @@ p {
   font-size: 72px;
   line-height: 98.4%;
   letter-spacing: 0.015em;
-  color: #CB2130;
+  color: #cb2130;
 }
 @media (max-width: 767px) {
   .name-information {
@@ -663,7 +530,7 @@ p {
 .car-call {
   max-width: 448px;
   height: 61px;
-  background: #53B92B;
+  background: #53b92b;
   border-radius: 29px;
   font-family: "Montserrat";
   font-style: normal;
@@ -672,7 +539,7 @@ p {
   line-height: 29px;
   text-align: center;
   text-transform: uppercase;
-  color: #F7F7F7;
+  color: #f7f7f7;
 }
 @media (max-width: 1200px) {
   .car-call {
@@ -705,7 +572,7 @@ p {
   font-size: 24px;
   line-height: 25px;
   text-align: right;
-  color: #53B92B;
+  color: #53b92b;
 }
 @media (max-width: 767px) {
   .free-cars p {
@@ -723,7 +590,7 @@ p {
 .free-cars span {
   width: 66px;
   height: 60px;
-  background: #53B92B;
+  background: #53b92b;
   border-radius: 0px 10px 0px 15px;
   font-family: "Montserrat";
   font-style: normal;
@@ -733,7 +600,7 @@ p {
   text-align: center;
   margin-right: 12px;
   margin-left: 23px;
-  color: #F7F7F7;
+  color: #f7f7f7;
 }
 @media (max-width: 767px) {
   .free-cars span {
@@ -761,7 +628,7 @@ p {
   font-weight: 500;
   font-size: 24px;
   line-height: 25px;
-  color: #53B92B;
+  color: #53b92b;
 }
 @media (max-width: 500px) {
   .payment {
@@ -785,4 +652,29 @@ p {
 .second-slider {
   margin-top: 60px;
   text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+body button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+body li {
+  list-style-type: none;
+}
+body a {
+  text-decoration: none;
+}
+body ul {
+  margin: 0px;
+  padding: 0px;
+}
+body p {
+  margin: 0px;
 }
