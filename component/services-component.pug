@@ -7,8 +7,8 @@ mixin services(logo, name, information, first, second, more, third, fourth, fift
         .information=information
         .more-information
             ul 
-                li=first
-                li=second
+                li!=first 
+                li!=second
                 if more
                     li=third
                 if more
@@ -16,7 +16,9 @@ mixin services(logo, name, information, first, second, more, third, fourth, fift
                 if more
                     li=fifth
                 if more
-                    li=sixth
+                    li!=sixth  
+
+
 
 
 

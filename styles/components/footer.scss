@@ -24,6 +24,10 @@
     }
   }
 
+  li {
+    list-style-type: none;
+  }
+
   .logo1 {
     @media (max-width: 750px) {
       display: none;

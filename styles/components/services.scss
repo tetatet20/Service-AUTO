@@ -1,5 +1,6 @@
 @import "../../component/services-component.scss";
 
+
 .services-container {
     box-sizing: border-box;
     // max-width: $maxWidth;
@@ -11,12 +12,25 @@
     font-family: 'Montserrat';
     flex-direction: column;
     padding: 50px;
+
+    @media (max-width: 1090px) {
+        // padding: 50px 150px;
+    }
 }
 
 .services {
     display: flex;
     justify-content: space-between;
     text-align: left;
+    flex-wrap: wrap;
+
+    @media (max-width: 1090px) {
+        justify-content: space-around;
+    }
+
+    @media (max-width: 760px) {
+        justify-content: center;
+    }
 }
 
 .services-container h3 {
@@ -27,5 +41,14 @@
     line-height: 59px;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @media (max-width: 760px) {
+        font-size: 30px;
+    }
+
+    @media (max-width: 425px) {
+        font-size: 30px;
+
+    }
 }
