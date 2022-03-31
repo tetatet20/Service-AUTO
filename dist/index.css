@@ -866,6 +866,7 @@
 }
 
 .services-container {
+  position: relative;
   box-sizing: border-box;
   background-color: white;
   display: flex;
@@ -875,6 +876,7 @@
   font-family: "Montserrat";
   flex-direction: column;
   padding: 50px;
+  border-bottom: 2px solid #CB2130;
 }
 .services {
   display: flex;
@@ -911,6 +913,53 @@
 @media (max-width: 425px) {
   .services-container h3 {
     font-size: 30px;
+  }
+}
+
+.order-service {
+  position: absolute;
+  bottom: -30px;
+  max-width: 448px;
+  height: 61px;
+  background: #53b92b;
+  border-radius: 29px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f7f7f7;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.order-service a {
+  color: #f7f7f7;
+}
+@media (max-width: 1200px) {
+  .order-service {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .order-service {
+    width: 330px;
+    height: 40px;
+    font-size: 15px;
+    line-height: 0px;
+    bottom: -20px;
+  }
+}
+@media (max-width: 500px) {
+  .order-service {
+    width: 230px;
+    height: 30px;
+    font-size: 10px;
+    padding: 0;
+    bottom: -15px;
+    text-align: center;
   }
 }
 
