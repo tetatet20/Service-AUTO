@@ -4,7 +4,7 @@
 @import "./styles/components/header.scss";
 @import "./styles/components/main.scss";
 @import "./styles/components/aboutCompany.scss";
-
+@import "./styles/components/price.scss";
 @import "./styles/components/services.scss";
 
 body {
@@ -37,7 +37,9 @@ body {
 
   h1,
   h2,
-  h3 {
+  h3,
+  h4
+   {
     margin: 0;
   }
 }

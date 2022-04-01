@@ -1,4 +1,4 @@
-@import "../../component/services-component.scss";
+@import "../../component/services-component/services-component.scss";
 
 
 .services-container {
@@ -58,7 +58,8 @@
 .order-service {
         position: absolute;
         bottom:-30px;
-        // left: 500px;
+        display: flex;
+        align-items: center;
         max-width: 448px;
         height: 61px;
         background: #53b92b;
@@ -71,32 +72,34 @@
         text-align: center;
         text-transform: uppercase;
         color: #f7f7f7;
-        padding-left: 100px;
-        padding-right: 100px;
+        box-sizing: border-box;
+        padding-left: 75px;
+        padding-right: 75px;
 
-            a {
-                color: #f7f7f7;
-            }
-      
+        p {
+            margin: 0 auto;
+        }
+    
         @media (max-width: 1200px) {
-          padding-left: 70px;
-          padding-right: 70px;
+        padding-left: 70px;
+        padding-right: 70px;
         }
-      
+    
         @media (max-width: 767px) {
-          width: 330px;
-          height: 40px;
-          font-size: 15px;
-          line-height: 0px;
-          bottom:-20px;
+        bottom: -20px;
+        width: 330px;
+        height: 40px;
+        font-size: 15px;
+        line-height: 0px;
         }
-      
+    
         @media (max-width: 500px) {
-          width: 230px;
-          height: 30px;
-          font-size: 10px;
-          padding: 0;
-          bottom:-15px;
-          text-align: center;
+        bottom: -15px;
+        width: 230px;
+        height: 30px;
+        font-size: 10px;
+        padding: 0;
+        text-align: center;
+        margin: 0 auto;
         }
 }
