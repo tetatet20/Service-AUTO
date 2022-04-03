@@ -1,4 +1,4 @@
-@import "../../component/price-component/price-component.scss";
+@import "../../components/price-component/price-component.scss";
 
 li {
     list-style-position: inside;
@@ -63,6 +63,7 @@ li {
     color: #FCD83E;
 
     @media (max-width: 1150px) {
+        margin-bottom: 25px;
        font-size: 20px;
     }
 

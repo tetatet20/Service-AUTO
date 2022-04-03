@@ -729,12 +729,12 @@
 }
 @media (max-width: 767px) {
   .information-company h3 {
-    font-size: calc(16px + 54.4 * ((100vw - 320px) / 1440));
+    font-size: calc(16px + 54.4 * ((100vw - 320px) / 1920));
   }
 }
 @media (min-width: 767px) {
   .information-company h3 {
-    font-size: calc(16px + 32 * (100vw / 1440));
+    font-size: calc(16px + 32 * (100vw / 1920));
   }
 }
 
@@ -746,12 +746,12 @@
 }
 @media (max-width: 767px) {
   .information-company p {
-    font-size: calc(10px + 17 * ((100vw - 320px) / 1440));
+    font-size: calc(10px + 17 * ((100vw - 320px) / 1920));
   }
 }
 @media (min-width: 767px) {
   .information-company p {
-    font-size: calc(10px + 10 * (100vw / 1440));
+    font-size: calc(10px + 10 * (100vw / 1920));
   }
 }
 
@@ -769,16 +769,30 @@
   padding: 20px 20px 30px 20px;
   max-width: 331px;
   max-height: 232px;
+  position: relative;
   background-color: rgba(255, 255, 255, 0.95);
-  border: 2px solid #CB2130;
+  border: 2px solid #cb2130;
+  border-bottom: transparent;
+}
+.container-component::after {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 100%;
+  left: 0;
+  bottom: -13px;
+  background: transparent;
+  background-image: linear-gradient(to top right, transparent 50.5%, rgba(255, 255, 255, 0.95) 50.5%), linear-gradient(to top left, transparent 50.5%, rgba(255, 255, 255, 0.95) 50.5%);
+  background-repeat: repeat-x, repeat-x;
+  background-position: 0 105%, 0 105%;
+  background-size: 20px 20px, 20px 20px;
 }
 .container-component:not(:last-child) {
   margin-right: 40px;
 }
 @media (max-width: 1150px) {
   .container-component:not(:last-child) {
-    margin-right: 10px;
-    margin-bottom: 10px;
+    margin: 0 20px 35px 0;
   }
 }
 @media (max-width: 730px) {
@@ -788,8 +802,7 @@
 }
 @media (max-width: 1150px) {
   .container-component:last-child {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0 30px;
     margin: 0px;
   }
 }
@@ -903,6 +916,7 @@ li {
 }
 @media (max-width: 1150px) {
   .types-prices {
+    margin-bottom: 25px;
     font-size: 20px;
   }
 }
