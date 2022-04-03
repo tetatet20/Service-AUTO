@@ -1,0 +1,102 @@
+@import "../../component/services-component.scss";
+
+
+.services-container {
+    position: relative;
+    box-sizing: border-box;
+    // max-width: $maxWidth;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+    flex-direction: column;
+    padding: 50px;
+    border-bottom: 2px solid #CB2130;
+
+    @media (max-width: 1090px) {
+        // padding: 50px 150px;
+    }
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    flex-wrap: wrap;
+
+    @media (max-width: 1090px) {
+        justify-content: space-around;
+    }
+
+    @media (max-width: 760px) {
+        justify-content: center;
+    }
+}
+
+.services-container h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+
+    @media (max-width: 760px) {
+        font-size: 30px;
+    }
+
+    @media (max-width: 425px) {
+        font-size: 30px;
+
+    }
+}
+
+.order-service {
+        position: absolute;
+        bottom:-30px;
+        // left: 500px;
+        max-width: 448px;
+        height: 61px;
+        background: #53b92b;
+        border-radius: 29px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #f7f7f7;
+        padding-left: 100px;
+        padding-right: 100px;
+
+            a {
+                color: #f7f7f7;
+            }
+      
+        @media (max-width: 1200px) {
+          padding-left: 70px;
+          padding-right: 70px;
+        }
+      
+        @media (max-width: 767px) {
+          width: 330px;
+          height: 40px;
+          font-size: 15px;
+          line-height: 0px;
+          bottom:-20px;
+        }
+      
+        @media (max-width: 500px) {
+          width: 230px;
+          height: 30px;
+          font-size: 10px;
+          padding: 0;
+          bottom:-15px;
+          text-align: center;
+        }
+}

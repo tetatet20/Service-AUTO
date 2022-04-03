@@ -1,0 +1,25 @@
+mixin services(logo, name, information, first, second, more, third, fourth, fifth, sixth)
+    .container-service 
+        .background
+            .background-logo 
+                img(src=logo, alt="alt")
+        .name=name
+        .information=information
+        .more-information
+            ul 
+                li!=first 
+                li!=second
+                if more
+                    li=third
+                if more
+                    li=fourth
+                if more
+                    li=fifth
+                if more
+                    li!=sixth  
+
+
+
+
+
+
