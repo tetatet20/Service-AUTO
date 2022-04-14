@@ -1,0 +1,93 @@
+.container-component {
+  box-sizing: border-box;
+  padding: 20px 20px 30px 20px;
+  max-width: 331px;
+  max-height: 232px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 2px solid #cb2130;
+  border-bottom: transparent;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 100%;
+    left: 0;
+    bottom: -13px;
+    background: transparent;
+    background-image: linear-gradient(
+        to top right,
+        transparent 50.5%,
+        rgba(255, 255, 255, 0.95) 50.5%
+      ),
+      linear-gradient(
+        to top left,
+        transparent 50.5%,
+        rgba(255, 255, 255, 0.95) 50.5%
+      );
+    background-repeat: repeat-x, repeat-x;
+    background-position: 0 105%, 0 105%;
+    background-size: 20px 20px, 20px 20px;
+  }
+
+  &:not(:last-child) {
+    margin-right: 40px;
+
+    @media (max-width: 1150px) {
+      margin: 0 20px 35px 0;
+    }
+
+    @media (max-width: 730px) {
+      margin-right: 0px;
+    }
+  }
+
+  &:last-child {
+    @media (max-width: 1150px) {
+      padding: 0 30px;
+      margin: 0px;
+    }
+  }
+}
+
+.title-price {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+
+  @media (max-width: 600px) {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+}
+
+.text-price {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 50px;
+
+  &:last-child {
+    margin-left: 25px;
+    margin-right: 25px;
+
+    @media (max-width: 600px) {
+      margin: 0px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    font-size: 17.5px;
+    margin-bottom: 25px;
+  }
+}

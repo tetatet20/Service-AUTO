@@ -1,0 +1,9 @@
+mixin payment(p)
+    .free-cars  
+        p Свободно <br> эвакуаторов
+        span 1
+        .payment 
+            p Оплата картой
+            img(src="../img/payment.svg" alt="Оплата картой")
+    a.car-call(href="tel:+78172580708")
+        p=p
