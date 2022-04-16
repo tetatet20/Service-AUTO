@@ -1,8 +1,9 @@
 html
   head
-    title Главная страница
+    title Service auto
     meta(name="viewport" content="width=device-width, initial-scale=1")
-    link(rel="stylesheet" href="index.css")
+    //- link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css")
+    script(src="./index.js") 
   body
     .container
       .transporent-header
@@ -10,7 +11,7 @@ html
       include ./components/main.pug  
       include ./components/aboutCompany.pug
       include ./components/services.pug
-
+      include ./components/examples/examples.pug
       include ./components/price.pug
       include ./components/footer.pug
-      
+
