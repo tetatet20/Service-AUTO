@@ -1,9 +1,12 @@
+@import "../node_modules/normalize.css/normalize.css";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap");
 @import "./styles/variables.scss";
 @import "./styles/components/footer.scss";
 @import "./styles/components/header.scss";
 @import "./styles/components/main.scss";
 @import "./styles/components/aboutCompany.scss";
+@import "./styles/components/examples.scss";
 @import "./styles/components/price.scss";
 @import "./styles/components/services.scss";
 
@@ -38,8 +41,7 @@ body {
   h1,
   h2,
   h3,
-  h4
-   {
+  h4 {
     margin: 0;
   }
 }

@@ -1,0 +1,63 @@
+
+.container-examples {
+    width: 100%;
+    padding:60px 0px 60px 0px;
+
+    @media (max-width: 900px) {
+        padding:40px 0px 40px 0px;
+    }
+    @media (max-width: 700px) {
+        padding: 15px 0px 25px 0px;
+    }
+
+        h1 {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 46px;
+            line-height: 59px;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+
+            @media (max-width: 900px) {
+                font-size: 36px;
+            }
+
+            @media (max-width: 700px) {
+                font-size: 28px;
+                margin-bottom: 0px;
+            }
+
+            @media (max-width: 500px) {
+                font-size: 24px;
+                margin-bottom: 0px;
+            }
+        }
+}
+
+.buttons {
+    width: 100px;
+    margin:  0 auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.img-left {
+   margin-right: 25px;
+    cursor: pointer;
+
+    &:hover {
+        width: 50% ;
+    }
+}
+
+.img-right {
+    cursor: pointer;
+    margin-left: 25px;
+
+    &:hover {
+        width: 50% ;
+    }
+}
+

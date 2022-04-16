@@ -11,10 +11,10 @@
   &::after {
     position: absolute;
     content: "";
-    height: 13px;
+    height: 12px;
     width: 100%;
     left: 0;
-    bottom: -13px;
+    bottom: -12px;
     background: transparent;
     background-image: linear-gradient(
         to top right,
@@ -45,11 +45,35 @@
 
   &:last-child {
     @media (max-width: 1150px) {
-      padding: 0 30px;
+      // padding: 0 30px;
       margin: 0px;
     }
+
+    @media (max-width: 600px) {
+      padding-bottom: 30px;
+     
+    }
+  }
+
+  &:first-child .text-price {
+      margin-left: 20px;
+      margin-right: 20px;
+  
+      @media (max-width: 600px) {
+        margin: 0px;
+      }
+
+      // &::before {
+
+      //   @media (max-width: 600px) {
+      //     top:46px;
+      //     left: 100px;
+      //   }
+      // }
   }
 }
+
+
 
 .title-price {
   font-family: "Montserrat";
@@ -60,6 +84,7 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 50px;
+  
 
   @media (max-width: 600px) {
     font-size: 18px;
@@ -76,18 +101,42 @@
   text-align: center;
   color: #000000;
   margin-bottom: 50px;
+  position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top:-25px;
+      left:88px;
+      width: 65px;
+      height: 1px;
+      background-color: black;
+
+      @media (max-width: 600px) {
+        top:-12px;
+        left:90px;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top:99px;
+      left:88px;
+      width: 65px;
+      height: 1px;
+      background-color: black;
+    }
 
   &:last-child {
     margin-left: 25px;
     margin-right: 25px;
 
-    @media (max-width: 600px) {
-      margin: 0px;
-    }
   }
 
   @media (max-width: 600px) {
     font-size: 17.5px;
     margin-bottom: 25px;
+
   }
 }
