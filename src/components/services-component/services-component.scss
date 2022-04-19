@@ -97,8 +97,15 @@
     margin-bottom: 30px;
 
     a {
+        display: block;
         text-decoration: none;
         color: #CB2130;
+        &:hover {
+            transition:all 0.3s ease;
+            -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2);
+            }
     }
 
     @media (max-width: 760px) {

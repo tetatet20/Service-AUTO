@@ -17,6 +17,9 @@
   .logo {
     display: flex;
     align-items: center;
+      a {
+        text-align: center;
+      }
 
     @media (max-width: 750px) {
         width: 100%;

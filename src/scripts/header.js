@@ -19,5 +19,6 @@ const link = document.querySelectorAll('.class-link')
 link.forEach(function(link){
     link.addEventListener('click',function(){
         passive.classList.remove('navigation-active')
+        burger.classList.remove('change')
     })
 })

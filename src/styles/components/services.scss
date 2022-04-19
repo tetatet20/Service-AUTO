@@ -58,6 +58,7 @@
 .order-service {
         position: absolute;
         bottom:-30px;
+        transition:all 0.4s ease;
         display: flex;
         align-items: center;
         max-width: 448px;
@@ -94,12 +95,18 @@
         }
     
         @media (max-width: 500px) {
-        bottom: -15px;
-        width: 230px;
-        height: 30px;
-        font-size: 10px;
+        bottom: -20px;
+        width: 270px;
+        height: 40px;
+        font-size: 14px;
         padding: 0;
         text-align: center;
         margin: 0 auto;
         }
+
+        &:hover {
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+            }
 }

@@ -43,8 +43,7 @@
 }
 
 .map {
-    // max-width: fit-content;
-    // max-height: fit-content;
+    box-shadow: 0 0 15px 20px #555;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -215,6 +214,7 @@
 .call-me-back {
     margin:0 auto;
     display: flex;
+    transition:all 0.4s ease;
     align-items: center;
     max-width: 345px;
     height: 55px;
@@ -251,6 +251,12 @@
         font-size: 15px;
         padding: 0 45px;
      }
+
+     &:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        }
 }
 
 .socialnetworks {

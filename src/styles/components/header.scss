@@ -27,6 +27,9 @@
     display: flex;
     align-items: center;
     z-index: 15;
+      a {
+        text-align: center;
+      }
   }
 
   .logo1 {
@@ -133,17 +136,47 @@
 
   .number-first {
     margin-bottom: 5px;
-  }
+       :hover {
+        color: #53b92b;
+        transition:all 0.2s ease;
+       }
+       :active {
+        transition:all 0.1s ease;
+        color: #cbe3c2;
+        }
+      }
 
   .number-second {
+    
     margin-bottom: 2px;
+    :hover {
+      color: #53b92b;
+      transition:all 0.3s ease;
+      }
+
+      :active {
+        transition:all 0.1s ease;
+        color: #cbe3c2;
+        }
   }
 
   .email {
+
     display: flex;
     cursor: pointer;
     align-items: center;
     justify-content: space-between;
+
+    :hover {
+      transition:all 0.3s ease;
+      color: #53b92b;
+      }
+
+      :active {
+        transition:all 0.1s ease;
+        color: #cbe3c2;
+        }
+
   }
 
   .email a {
@@ -156,59 +189,6 @@
     height: 10px;
   }
 
-  // .header-burger {
-  //     display: none;
-  // }
-
-  // @media (max-width: 900px) {
-  //   .header-burger {
-      
-  //     display: block;
-  //     position: relative;
-  //     width: 30px;
-  //     height: 20px;
-
-  //     &::before {
-  //       content: "";
-  //       background-color: black;
-  //       position: absolute;
-  //       width: 100%;
-  //       height: 2px;
-  //       left: 0px;
-  //       top: 0px;
-  //     }
-
-  //     &::after {
-  //       content: "";
-  //       background-color: black;
-  //       position: absolute;
-  //       width: 100%;
-  //       height: 2px;
-  //       left: 0px;
-  //       bottom: 0px;
-  //     }
-
-  //     @media (max-width: 500px) {
-  //       width: 20px;
-  //       height: 15px;
-
-  //       .burger-span {
-  //         top: 6px;
-  //       }
-  //     }
-  //   }
-
-  //   .burger-span {
-  //     position: absolute;
-  //     background-color: black;
-  //     width: 100%;
-  //     left: 0;
-  //     height: 2px;
-  //     top: 9px;
-    
-  //   }
-  // }
- 
 
 .navigation-active {
       position: fixed;
@@ -224,14 +204,18 @@
       z-index: 10;
       align-items: flex-start;
       padding-left: 50px;
+      backdrop-filter: blur(8px);
+      // opacity: 98%;
 
     li {
       margin-bottom: 15px;
     }
 
       a {
+        color: black;
+        font-family: "Montserrat";
         font-weight: 500;
-        font-size: 20px;
+        font-size: 22px;
       }
 }
 
