@@ -113,8 +113,9 @@
       background-color: black;
 
       @media (max-width: 600px) {
-        top:-12px;
-        left:90px;
+        display: none;
+        // top:-12px;
+        // left:90px;
       }
     }
 
@@ -126,6 +127,13 @@
       width: 65px;
       height: 1px;
       background-color: black;
+
+      @media (max-width: 600px) {
+        display: none;
+        // top:-12px;
+        // left:90px;
+      }
+
     }
 
   &:last-child {

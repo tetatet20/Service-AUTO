@@ -46,18 +46,20 @@
 .img-left {
    margin-right: 25px;
     cursor: pointer;
-
+    transition: all ease 0.3s;
+    
     &:hover {
-        width: 50% ;
+        transform: scale(1.5);
     }
 }
 
 .img-right {
     cursor: pointer;
     margin-left: 25px;
+    transition: all ease 0.3s;
 
     &:hover {
-        width: 50% ;
+        transform: scale(1.5);
     }
 }
 

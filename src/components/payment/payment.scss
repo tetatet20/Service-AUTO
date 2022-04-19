@@ -2,7 +2,7 @@
     display: flex;
     margin-top: 25px;
     margin-bottom: 25px;
-  
+    
     @media (max-width: 767px) {
       margin-top: 10px;
       margin-bottom: 20px;
@@ -12,14 +12,14 @@
     @media (max-width: 500px) {
       margin-right: 0px;
       margin-bottom: 10px;
-      justify-content: space-between;
+      justify-content: space-around;
     }
   }
   
   .car-call {
     display: flex;
     align-items: center;
-
+    transition:all 0.4s ease;
     max-width: 448px;
     height: 61px;
     background: #53b92b;
@@ -53,12 +53,18 @@
     }
   
     @media (max-width: 500px) {
-      width: 230px;
-      height: 30px;
-      font-size: 10px;
+      width: 270px;
+      height: 40px;
+      font-size: 14px;
       padding: 0;
       text-align: center;
       margin: 0 auto;
+    }
+
+    &:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
     }
   }
   
@@ -134,6 +140,4 @@
     }
   }
 
-  .payment-click {
-    
-  }
+  

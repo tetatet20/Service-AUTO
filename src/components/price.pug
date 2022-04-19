@@ -1,7 +1,7 @@
 include ./price-component/price-component.pug
 
 .container-price 
-    h2 Цены
+    h2(id="price") Цены
     .types-payment
         +price('Наличный расчет', 'Предоставляем весь спектр документов, в том числе и для страховых компаний.')
         +price('Безналичный расчет', 'Заключаем договора с организациями на предоставление услуг.')
@@ -18,4 +18,3 @@ include ./price-component/price-component.pug
 
 
 
-                
