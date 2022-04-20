@@ -8,7 +8,7 @@ const slider = tns({
     slideBy: 'page',
     autoplay: false,
     gutter: 20,
-    fixedWidth: 400,
+    fixedWidth: 380,
     center: true,
     controls: false,
     navPosition: 'bottom',

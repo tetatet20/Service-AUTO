@@ -42,7 +42,8 @@ module.exports = {
         hints: false
     },
     resolve: {
-        extensions: ['.js']
+        extensions: ['.js'],
+        
     },
     optimization: optimization(),
     devServer: {

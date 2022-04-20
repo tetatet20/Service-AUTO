@@ -3,7 +3,7 @@
   top:0;
   left: 0;
   width: 100%;
-  // max-height: 100px;
+  height: 100px;
   padding: 15px 50px; //сбоку лучше сделать отступ 50 пикселей
   background-color: #f8f8f8;
   display: flex;
@@ -17,6 +17,7 @@
 
   @media (max-width: 500px) {
     padding: 15px 30px;
+    height: 70px;
   }
 }
   li {
@@ -86,6 +87,7 @@
       // display: none;
       position: fixed;
       left:-100%;
+      opacity: 0;
     }
   }
 
@@ -134,7 +136,7 @@
     cursor: pointer;
   }
 
-  .number-first {
+  .number-first-header {
     margin-bottom: 5px;
        :hover {
         color: #53b92b;
@@ -146,7 +148,7 @@
         }
       }
 
-  .number-second {
+  .number-second-header {
     
     margin-bottom: 2px;
     :hover {
@@ -160,7 +162,7 @@
         }
   }
 
-  .email {
+  .email-header {
 
     display: flex;
     cursor: pointer;
@@ -179,7 +181,7 @@
 
   }
 
-  .email a {
+  .email-header a {
     color: $red;
     margin-left: 8px;
   }
@@ -205,7 +207,7 @@
       align-items: flex-start;
       padding-left: 50px;
       backdrop-filter: blur(8px);
-      // opacity: 98%;
+      opacity: 1;
 
     li {
       margin-bottom: 15px;

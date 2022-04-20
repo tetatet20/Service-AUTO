@@ -130,22 +130,52 @@
     cursor: pointer;
   }
 
-  .number-first {
+  .number-first-footer {
     margin-bottom: 5px;
+
+    :hover {
+      color: #53b92b;
+      transition:all 0.3s ease;
+      }
+
+      :active {
+        transition:all 0.1s ease;
+        color: #cbe3c2;
+        }
   }
 
-  .number-second {
+  .number-second-footer {
     margin-bottom: 2px;
+
+    :hover {
+      color: #53b92b;
+      transition:all 0.3s ease;
+      }
+
+      :active {
+        transition:all 0.1s ease;
+        color: #cbe3c2;
+        }
   }
 
-  .email {
+  .email-footer {
     display: flex;
     cursor: pointer;
     align-items: center;
     justify-content: space-between;
+
+    :hover {
+      transition:all 0.3s ease;
+      color: #53b92b;
+      }
+
+      :active {
+        transition:all 0.1s ease;
+        color: #cbe3c2;
+        }
   }
 
-  .email a {
+  .email-footer a {
     color: $red;
     margin-left: 8px;
   }
