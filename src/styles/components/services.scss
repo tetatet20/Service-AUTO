@@ -110,4 +110,11 @@
             -ms-transform: scale(1.1);
             transform: scale(1.1);
             }
+
+            &:active {
+                transition:all 0.2s ease;
+                -webkit-transform: scale(0.8);
+                -ms-transform: scale(0.8);
+                transform: scale(0.8);
+                }
 }
