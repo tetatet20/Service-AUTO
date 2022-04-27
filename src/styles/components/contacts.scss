@@ -222,9 +222,16 @@
 	line-height: 16px;
 	padding-left: 20px;
 	border-radius: 3px;
+    
+    
 }
 
+.eror::-webkit-input-placeholder { /* WebKit browsers */
+            color:    #cb2130;
+            opacity: 1;
+         }
 .call-me-back {
+    justify-content: center;
 	margin: 0 auto;
 	display: flex;
 	transition: all 0.4s ease;
@@ -242,48 +249,56 @@
 	text-transform: uppercase;
 	color: #f7f7f7;
 	box-sizing: border-box;
-	padding: 0 64px;
+	// padding: 0 64px;
 	cursor: pointer;
 
 	&-active {
+        justify-content: center;
 		margin: 0 auto;
 		display: flex;
 		transition: all 0.4s ease;
 		align-items: center;
 		max-width: 345px;
 		height: 55px;
-		background: #cb2130;
+		background: #2a8905;
 		border-radius: 29px;
 		font-family: 'Montserrat';
 		font-style: normal;
 		font-weight: 700;
-		font-size: 20px;
+		font-size: 18px;
 		line-height: 24px;
 		text-align: center;
 		text-transform: uppercase;
 		color: #f7f7f7;
 		box-sizing: border-box;
-		padding: 0 64px;
+		// padding: 0 64px;
 		cursor: pointer;
+
+        // @media (max-width: 500px) {
+        //     font-size: 13px;
+        //     padding: 0 33px;
+        // }
+
+        
 	}
 
 	@media (max-width: 700px) {
 		height: 40px;
 		font-size: 17px;
-		padding: 0 56px;
+		// padding: 0 56px;
 		margin-top: -10px;
 	}
 
 	@media (max-width: 700px) {
 		height: 40px;
 		font-size: 17px;
-		padding: 0 56px;
+		// padding: 0 56px;
 		margin-top: -10px;
 	}
 
 	@media (max-width: 500px) {
-		font-size: 15px;
-		padding: 0 45px;
+		font-size: 13px;
+		padding: 0 33px;
 	}
 
 	&:hover {
