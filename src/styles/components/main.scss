@@ -1,6 +1,7 @@
 @import "../../components/payment/payment.scss";
 
 .main {
+  position: relative;
   width: 100%;
   background-color: white;
   // margin: 0 auto;
@@ -9,12 +10,21 @@
   flex-direction: column;
   z-index: 2;
   box-sizing: border-box;
-  
   @media (max-width: 500px) {
     padding:0px 0px 25px 0px;
   }
 }
+.anchor-main {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: -105px;
+  left: 0;
 
+  @media (max-width: 500px) {
+		top:-90px;
+	}
+}
 .first-slider {
   @media (max-width: 500px) {
     display: none;

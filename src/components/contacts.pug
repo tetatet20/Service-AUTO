@@ -1,5 +1,6 @@
 .container-contacts 
-    h1(id="contacts") Контакты
+    .anchor-contacts(id="contacts")
+    h1 Контакты
     .map-and-form
         .map 
             img(src="./img/coordinates.svg" alt="Расположение")
@@ -8,7 +9,7 @@
             .socialnetworks
                 a(href="")
                     img(src="./img/instagramm.svg" alt="#")
-                a(href="https://vk.com")
+                a(href="https://vk.com/svcauto" target="_blank")
                     img(src="./img/vk.svg" alt="Вконтакте")
 
             //- img(src="./img/magnifying-glass.jpg" alt="Говоровский проезд 4")
@@ -20,7 +21,7 @@
                 .date 
                     .avatar_name
                         img(src="./img/name.svg" alt="alt")
-                    input.input-date.name-send(type="text" placeholder="Ваше имя?" name="fullname")
+                    input.input-date.name-send(type="text" placeholder="Ваше имя:" name="fullname")
                 .date 
                     .avatar_number
                         img(src="./img/number.svg" alt="alt")    
@@ -29,6 +30,6 @@
                 .date
                     .avatar-email
                         img(src="./img/email.svg" alt="alt")    
-                    input.input-date.email-send(type="email" placeholder="Ваш email:" name="email")
+                    input.input-date.email-send(type="text" placeholder="Что эвакуируем?" name="text")
                 a.call-me-back Перезвонить мне
 
