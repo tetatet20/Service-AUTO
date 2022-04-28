@@ -1,6 +1,7 @@
 include ./payment/payment.pug
 
-.main(id="main")   
+.main  
+    .anchor-main(id="main") 
     .information-container
         //- .first-slider 
         //-     img(src="../img/first-slider.svg" alt="alt")// Боковой слайдер
@@ -8,7 +9,6 @@ include ./payment/payment.pug
             span.name-information Сервис Авто
             span.tow-truck-information Эвакуатор
             img.city-information(src="./img/vologda.svg" alt="Вологда")
-            //- span.city-information Вологда
             span.region-russia  Область и Россия
             .container-cars
                 +payment('Вызвать эвакуатор')
